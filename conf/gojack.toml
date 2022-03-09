@@ -1,0 +1,17 @@
+
+
+
+[app]
+    name = "gojack"
+    desc = "这是一个go项目"
+    version = "0.0.1"
+
+[log]
+    level = "trace" #日志级别：error > info > trace
+    console = true #是否控制台打印（默认打印）
+[log.file]
+    path =  "./logs" #日志输出路径，默认当前执行文件下的logs目录下
+    rotation = 1 #文件切割周期（天），默认一天
+    monitor = 5 #文件监控周期（天），默认5天
+    retain = 90 #日志保留周期（天），默认90天
+    limit_size = 200 #单个文件大小上限（M），默认200M
